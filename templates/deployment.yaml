@@ -39,9 +39,6 @@ spec:
             {{- toYaml . | nindent 12 }}
           {{- end }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
-          args:
-            - "--config"
-            - "/config/config.json" 
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
