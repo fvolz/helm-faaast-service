@@ -36,7 +36,7 @@ persistence:
 messageBus:
   class: "de.fraunhofer.iosb.ilt.faaast.service.messagebus.cloudevents.MessageBusCloudevents"
   host: "wss://mqttbroker.factory-x.catena-x.net:443"
-  user: "fx-publisher"
+  user: "fx-factory"
   password: "placeholder"
 
 endpoints:
