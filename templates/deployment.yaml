@@ -41,7 +41,7 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           args:
             - "-c"
-            - "/config/config.json" 
+            - "app/config/config.json" 
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
