@@ -28,7 +28,7 @@ ingress:
           pathType: Prefix
 
 config:
-  mountPath: "/app/config/"
+  mountPath: "/app/config/config.json"
 
 persistence:
   class: "de.fraunhofer.iosb.ilt.faaast.service.persistence.memory.PersistenceInMemory"
