@@ -25,7 +25,7 @@ ingress:
         - fa3st.iwu-dresden.factory-x.catena-x.net
       secretName: tls-secret-iwu-dresden
   hosts:
-    - host: iwu-dresden.factory-x.catena-x.net
+    - host: fa3st.iwu-dresden.factory-x.catena-x.net
       paths:
         - path: /
           pathType: Prefix
