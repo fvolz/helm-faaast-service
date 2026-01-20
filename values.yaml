@@ -9,7 +9,7 @@ service:
   type: ClusterIP
   port: 443
 
-fullnameOverride: faaast-service
+fullnameOverride: faaast-service-dresden
 
 ingress:
   enabled: true
@@ -22,10 +22,10 @@ ingress:
     nginx.ingress.kubernetes.io/auth-type: basic
   tls:
     - hosts:
-        - faaast-service.factory-x.catena-x.net
-      secretName: tls-secret-faaast-service
+        - fa3st.iwu-dresden.factory-x.catena-x.net
+      secretName: tls-secret-iwu-dresden
   hosts:
-    - host: faaast-service.factory-x.catena-x.net
+    - host: iwu-dresden.factory-x.catena-x.net
       paths:
         - path: /
           pathType: Prefix
